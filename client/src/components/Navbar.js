@@ -6,16 +6,15 @@ function Navbar() {
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="#">Nathan Szurek</a>
+            <Link className="navbar-brand" to="/">Nathan Szurek</Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
-                    <a className="nav-item nav-link active" href="#">Home <span className="sr-only">(current)</span></a>
-                    <a className="nav-item nav-link" href="#">Features</a>
-                    <a className="nav-item nav-link" href="#">Pricing</a>
-                    <a className="nav-item nav-link disabled" href="#">Disabled</a>
+                    <Link className={location.pathname === "/" ? "nav-item nav-link active" : "nav-item nav-link"} to="/">Home</Link>
+                    <Link className={location.pathname === "/Contact" ? "nav-item nav-link active" : "nav-item nav-link"} to="/Contact">Contact</Link>
+                    <Link className={location.pathname === "/Portfolio" ? "nav-item nav-link active" : "nav-item nav-link"}  to="/Portfolio">Portfolio</Link>
                 </div>
             </div>
         </nav>
