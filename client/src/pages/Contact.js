@@ -1,4 +1,4 @@
-import React { useState } from 'react'
+import React, { useState } from 'react'
 import ProfileCard from '../components/ProfileCard'
 import ContactForm from '../components/ContactForm'
 import axios from "axios";
@@ -11,7 +11,7 @@ export default function Contact() {
         message: "alalalalaalal"
     });
 
-    function sendEmail(e) {
+    const sendEmail =(e) => {
         e.preventDefault();
         axios.post("/send", formData)
             .then(res => {
