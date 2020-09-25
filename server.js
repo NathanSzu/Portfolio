@@ -33,7 +33,7 @@ app.post('/send', (req, res) => {
     text: `${message}`, // plain text body
   }
 
-  transporter.sendMail(mailOptions, function (err, data) {
+  transporter.sendMail(mailOptions, (err, data) => {
     if (err) {
       console.log('Error')
     } else {
