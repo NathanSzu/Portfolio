@@ -21,7 +21,7 @@ function ContactForm() {
     const sendEmail = async (e) => {
         e.preventDefault();
         console.log(formData);
-        const response = await fetch("/send", {
+        fetch("/send", {
             method: 'POST',
             // headers: {
             //     'Content-type': 'application/json'
