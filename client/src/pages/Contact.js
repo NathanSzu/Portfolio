@@ -1,8 +1,15 @@
 import React from 'react'
 import ProfileCard from '../components/ProfileCard'
 import ContactForm from '../components/ContactForm'
+import axios from "axios";
 
 export default function Contact() {
+    const [formData, setFormData] = useState({
+        name: "lala",
+        email: "lala@lala.com",
+        message: "alalalalaalal"
+    });
+
     function sendEmail(e) {
         e.preventDefault();
         axios.post("/send", formData)
