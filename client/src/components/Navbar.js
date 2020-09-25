@@ -13,8 +13,8 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
                     <Link className={location.pathname === "/" ? "nav-item nav-link active" : "nav-item nav-link"} to="/">Home</Link>
-                    <Link className={location.pathname === "/Contact" ? "nav-item nav-link active" : "nav-item nav-link"} to="/Contact">Contact</Link>
                     <Link className={location.pathname === "/Portfolio" ? "nav-item nav-link active" : "nav-item nav-link"}  to="/Portfolio">Portfolio</Link>
+                    <Link className={location.pathname === "/Contact" ? "nav-item nav-link active" : "nav-item nav-link"} to="/Contact">Contact</Link>
                 </div>
             </div>
         </nav>
