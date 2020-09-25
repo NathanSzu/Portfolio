@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 
-function ContactForm({ sendEmail }) {
+function ContactForm() {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -16,6 +16,7 @@ function ContactForm({ sendEmail }) {
                 console.log(res)
                 console.log(res.data)
             })
+            .catch(err => {console.log(err)})
     };
 
     // const sendEmail = async (e) => {
