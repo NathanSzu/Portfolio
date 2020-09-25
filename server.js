@@ -1,8 +1,11 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3001;
-const nodemailer = require('nodemailer')
+const nodemailer = require('nodemailer');
+var cors = require('cors');
 require('dotenv').config();
+
+app.use(cors())
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -23,7 +26,7 @@ let transporter = nodemailer.createTransport({
 });
 
 // Post route for contact form submission
-app.post('/send', (req, res) => {
+app.post('/send', (req, res, next) => {
   console.log(req.body)
   var { name, email, message } = req.body;
   let mailOptions = {
