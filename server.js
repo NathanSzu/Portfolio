@@ -11,13 +11,6 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, 'build')));
 }
 
-// Catch all route to redirect unmanaged routes back to the react app.
-// THIS OPTION IS NOT SEO OPTIMIZED
-// THIS ROUTE SENDS ALL SAVED LINKS TO THE ROOT
-app.get('/*', function (req, res) {
-  res.redirect('/')
-});
-
 // Nodemailer config to handle contact form submit.
 let transporter = nodemailer.createTransport({
   host: "smtp-relay.sendinblue.com",
@@ -48,6 +41,13 @@ app.post('/send', (req, res) => {
     }
   });
   res.json('Email Sent');
+});
+
+// Catch all route to redirect unmanaged routes back to the react app.
+// THIS OPTION IS NOT SEO OPTIMIZED
+// THIS ROUTE SENDS ALL SAVED LINKS TO THE ROOT
+app.get('/*', function (req, res) {
+  res.redirect('/')
 });
 
 app.listen(PORT, () => { console.log(`API Server now listening on PORT ${PORT}!`) })
