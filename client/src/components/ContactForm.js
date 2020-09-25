@@ -11,7 +11,7 @@ function ContactForm() {
 
     function sendEmail(e) {
         e.preventDefault();
-        axios.post("/send", formData)
+        axios.post("https://aqueous-chamber-38675.herokuapp.com/send", formData)
             .then(res => {
                 console.log(res)
                 console.log(res.data)
