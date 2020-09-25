@@ -2,21 +2,21 @@ import React, { useState } from "react";
 import axios from "axios";
 
 
-function ContactForm() {
+function ContactForm({ sendEmail }) {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         message: ""
     });
 
-    function sendEmail(e) {
-        e.preventDefault();
-        axios.post("/send", formData)
-            .then(res => {
-                console.log(res)
-                console.log(res.data)
-            })
-    };
+    // function sendEmail(e) {
+    //     e.preventDefault();
+    //     axios.post("/send", formData)
+    //         .then(res => {
+    //             console.log(res)
+    //             console.log(res.data)
+    //         })
+    // };
 
     // const sendEmail = async (e) => {
     //     e.preventDefault();
