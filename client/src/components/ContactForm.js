@@ -9,13 +9,34 @@ function ContactForm() {
         message: ""
     });
 
-    function sendEmail(e) {
+    // function sendEmail(e) {
+    //     e.preventDefault();
+    //     axios.post("/send", formData)
+    //         .then(res => {
+    //             console.log(res)
+    //             console.log(res.data)
+    //         })
+    // };
+
+    const sendEmail = async (e) => {
         e.preventDefault();
-        axios.post("/send", formData)
-            .then(res => {
-                console.log(res)
-                console.log(res.data)
-            })
+        console.log(formData);
+        const response = await fetch("/send", {
+            method: 'POST',
+            // headers: {
+            //     'Content-type': 'application/json'
+            // },
+            body: formData
+        });
+
+        // const resData = await response.json();
+        // if (resData.status === 'success') {
+        //     alert("Message Sent.");
+        //     // this.resetForm()
+        // } else if (resData.status === 'fail') {
+        //     alert("Message failed to send.")
+        // }
+
     };
 
     function handleNameChange(e) {
