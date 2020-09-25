@@ -1,7 +1,8 @@
-import React from 'react'
+import React { useState } from 'react'
 import ProfileCard from '../components/ProfileCard'
 import ContactForm from '../components/ContactForm'
 import axios from "axios";
+import { useState } from 'react'
 
 export default function Contact() {
     const [formData, setFormData] = useState({
