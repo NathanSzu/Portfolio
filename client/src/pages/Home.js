@@ -1,7 +1,11 @@
 import React from 'react'
 import ProfileCard from '../components/ProfileCard'
+import dataSet from '../utils/PortfolioInfo'
 
 export default function Home() {
+    const languages = dataSet.all.languages
+    console.log(languages)
+
     return (
         <div>
             <div className="d-flex justify-content-center">
@@ -12,7 +16,14 @@ export default function Home() {
                         </div>
                         <div className="col-md-8">
                             <h1 className="display-4">About Me</h1>
-                            <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                            <h2>Languages</h2>
+                            <ul className="list-group list-group-horizontal-md justify-content-center">
+                                {languages.map((language) => (
+                                    <li className="list-group-item">
+                                        {language}
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </div>
