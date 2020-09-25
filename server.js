@@ -36,7 +36,7 @@ app.post('/send', (req, res) => {
   let mailOptions = {
     from: `"${name}" <${email}>`, //'"Fred Foo 👻" <foo@example.com>', sender address
     to: `${process.env.EMAIL}`, // list of receivers
-    subject: "Atlas Pet Contact Form",
+    subject: "Portfolio Contact Form",
     text: `${message}`, // plain text body
   }
 
