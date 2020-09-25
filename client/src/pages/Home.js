@@ -4,7 +4,8 @@ import dataSet from '../utils/PortfolioInfo'
 
 export default function Home() {
     const languages = dataSet.all.languages
-    console.log(languages)
+    const databases = dataSet.all.database
+    const others = dataSet.all.other
 
     return (
         <div>
@@ -24,6 +25,22 @@ export default function Home() {
                                     </li>
                                 ))}
                             </ul>
+                            <h2>Database</h2>
+                            <ul className="list-group list-group-horizontal-md justify-content-center">
+                                {databases.map((database) => (
+                                    <li className="list-group-item">
+                                        {database}
+                                    </li>
+                                ))}
+                            </ul>
+                            <h2>Other</h2>
+                            <div className="row">
+                                {others.map((other) => (
+                                    <div className="list-group-item col-md-3">
+                                        {other}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -17,8 +17,7 @@ export default {
             "Heroku",
             "Bootstrap",
             "Git",
-            "JQuery",
-            "Microsoft Office Suite"
+            "JQuery"
         ]
     }
 }
