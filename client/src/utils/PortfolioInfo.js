@@ -18,6 +18,28 @@ export default {
             "Bootstrap",
             "Git",
             "JQuery"
+        ],
+        projects: [
+            {
+                title: "Project 1",
+                github: "githubURL",
+                application: "liveLink"
+            },
+            {
+                title: "Project 1",
+                github: "githubURL",
+                application: "liveLink"
+            },
+            {
+                title: "Project 1",
+                github: "githubURL",
+                application: "liveLink"
+            },
+            {
+                title: "Project 1",
+                github: "githubURL",
+                application: "liveLink"
+            }    
         ]
     }
 }
