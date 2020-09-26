@@ -19,27 +19,6 @@ function ContactForm() {
             .catch(err => {console.log(err)})
     };
 
-    // const sendEmail = async (e) => {
-    //     e.preventDefault();
-    //     console.log(formData);
-    //     fetch("/send", {
-    //         method: 'POST',
-    //         // headers: {
-    //         //     'Content-type': 'application/json'
-    //         // },
-    //         body: formData
-    //     });
-
-    //     // const resData = await response.json();
-    //     // if (resData.status === 'success') {
-    //     //     alert("Message Sent.");
-    //     //     // this.resetForm()
-    //     // } else if (resData.status === 'fail') {
-    //     //     alert("Message failed to send.")
-    //     // }
-
-    // };
-
     function handleNameChange(e) {
         setFormData({ ...formData, name: e.target.value })
     };

@@ -10,10 +10,9 @@ export default function Home() {
     var keygen = require("keygenerator");
 
     return (
-        <div>
             <div className="d-flex justify-content-center">
-                <div className="jumbotron col-md-8 jumbotron-fluid">
-                    <div className="row">
+                <div className="jumbotron col-md-8 jumbotron-fluid pt-4 pb-4">
+                    <div className="row m-3">
                         <div className="col-md-4">
                             <ProfileCard />
                         </div>
@@ -47,6 +46,5 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
