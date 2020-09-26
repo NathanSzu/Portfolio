@@ -21,25 +21,20 @@ export default {
         ],
         projects: [
             {
-                title: "Project 1",
-                github: "githubURL",
-                application: "liveLink"
+                title: "Pet Supply Website",
+                github: "https://github.com/NathanSzu/PetSupplyWebsite",
+                application: "https://damp-dusk-22863.herokuapp.com/"
             },
             {
-                title: "Project 1",
-                github: "githubURL",
-                application: "liveLink"
+                title: "Blog for Developers",
+                github: "https://github.com/NathanSzu/BlogForDevelopers",
+                application: "https://safe-wildwood-99674.herokuapp.com/"
             },
             {
-                title: "Project 1",
-                github: "githubURL",
-                application: "liveLink"
-            },
-            {
-                title: "Project 1",
-                github: "githubURL",
-                application: "liveLink"
-            }    
+                title: "Google Book Search",
+                github: "https://github.com/NathanSzu/GoogleBookSearch",
+                application: "https://stormy-sands-17663.herokuapp.com/"
+            }   
         ]
     }
 }
