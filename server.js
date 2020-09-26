@@ -5,7 +5,8 @@ const nodemailer = require('nodemailer');
 var cors = require('cors');
 require('dotenv').config();
 
-app.use(cors())
+// app.use(cors());
+app.use(cors({ origin: '*' }));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
