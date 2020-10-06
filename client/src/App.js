@@ -4,6 +4,7 @@ import NavBar from "./components/Navbar";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
+import Resume from './pages/Resume'
 
 
 
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/Contact" component={Contact} />
         <Route exact path="/Portfolio" component={Portfolio} />
+        <Route exact path="/Resume" component={Resume} />
       </div>
     </Router>
   );
