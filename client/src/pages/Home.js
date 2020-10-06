@@ -19,7 +19,7 @@ export default function Home() {
                         </div>
                         <div className="col-md-8">
                             <h1 className="display-4 justify-content-center">About Me</h1>
-                            <Link to="/Resume">here</Link>
+                            {/* <Link to="/Resume">here</Link> */}
                             <h2>Languages</h2>
                             <ul className="list-group list-group-horizontal-md justify-content-center">
                                 {languages.map((language) => (
