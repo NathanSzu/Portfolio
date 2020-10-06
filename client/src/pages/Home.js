@@ -17,7 +17,7 @@ export default function Home() {
                             <ProfileCard />
                         </div>
                         <div className="col-md-8">
-                            <h1 className="display-4">About Me</h1>
+                            <h1 className="display-4 justify-content-center">About Me</h1>
                             <h2>Languages</h2>
                             <ul className="list-group list-group-horizontal-md justify-content-center">
                                 {languages.map((language) => (
