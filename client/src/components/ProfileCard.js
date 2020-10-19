@@ -7,7 +7,7 @@ export default function ProfileCard() {
         <div className="card profile-card" /*style="width: 18rem;"*/>
             <img className="card-img-top" src={ProfilePic} alt="Nathan Szurek" />
             <div className="card-body">
-                <p className="card-text">Front End Developer with a MERN stack development skill set and a passion for creating and learning.</p>
+                <p className="card-text">Full-stack Developer with a MERN stack development skill set and a passion for creating and learning.</p>
             </div>
         </div>
     )
