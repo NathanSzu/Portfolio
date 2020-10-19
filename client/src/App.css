@@ -36,6 +36,10 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
-.nav-wrapper {
+.center-wrapper {
   margin: 0 auto;
+}
+
+.j-texture {
+  background-image: url("./assets/texture.png");
 }

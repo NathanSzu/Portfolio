@@ -12,13 +12,13 @@ export default function Home() {
 
     return (
             <div className="d-flex justify-content-center">
-                <div className="jumbotron col-md-8 jumbotron-fluid pt-4 pb-4">
+                <div className="jumbotron j-texture col-sm-10 col-md-10 col-lg-8 jumbotron-fluid pt-4 pb-4">
                     <div className="row m-3">
                         <div className="col-md-4">
                             <ProfileCard />
                         </div>
                         <div className="col-md-8">
-                            <h1 className="display-4 justify-content-center">About Me</h1>
+                            {/* <h1 className="display-4 justify-content-center">About Me</h1> */}
                             {/* <Link to="/Resume">here</Link> */}
                             <h2>Languages</h2>
                             <ul className="list-group list-group-horizontal-md justify-content-center">
@@ -39,7 +39,7 @@ export default function Home() {
                             <h2>Other</h2>
                             <div className="row">
                                 {others.map((other) => (
-                                    <div className="list-group-item col-md-3" key={keygen.number()}>
+                                    <div className="list-group-item col-md-4 center-wrapper" key={keygen.number()}>
                                         {other}
                                     </div>
                                 ))}
