@@ -38,3 +38,8 @@
 .j-texture {
   background-image: url("./assets/texture.png");
 }
+
+.professional-link {
+  color: black;
+  font-weight: bold;
+}
