@@ -20,7 +20,7 @@ export default function Home() {
                         <div className="col-md-8">
                             {/* <h1 className="display-4 justify-content-center">About Me</h1> */}
                             {/* <Link to="/Resume">here</Link> */}
-                            <h2>Languages</h2>
+                            <h2 className="mt-3">Languages</h2>
                             <ul className="list-group list-group-horizontal-md justify-content-center">
                                 {languages.map((language) => (
                                     <li className="list-group-item" key={keygen.number()}>
@@ -28,7 +28,7 @@ export default function Home() {
                                     </li>
                                 ))}
                             </ul>
-                            <h2>Database</h2>
+                            <h2 className="mt-3">Database</h2>
                             <ul className="list-group list-group-horizontal-md justify-content-center">
                                 {databases.map((database) => (
                                     <li className="list-group-item" key={keygen.number()}>
@@ -36,7 +36,7 @@ export default function Home() {
                                     </li>
                                 ))}
                             </ul>
-                            <h2>Other</h2>
+                            <h2 className="mt-3">Other</h2>
                             <div className="row">
                                 {others.map((other) => (
                                     <div className="list-group-item col-md-4 center-wrapper" key={keygen.number()}>
