@@ -21,10 +21,10 @@ export default function Portfolio() {
                                         {project.title}
                                         </div>
                                         <div>
-                                        GitHub: <a href={project.github}>{project.github}</a>
+                                        GitHub: <a href={project.github} target="_blank">{project.github}</a>
                                         </div>
                                         <div>
-                                        Project: <a href={project.application}>{project.application}</a>
+                                        Project: <a href={project.application} target="_blank">{project.application}</a>
                                         </div>     
                                     </div>
                                 ))}
