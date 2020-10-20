@@ -8,7 +8,7 @@ export default function Portfolio() {
 
     return (
             <div className="d-flex justify-content-center">
-                <div className="jumbotron j-texture col-sm-10 col-md-10 col-lg-8 jumbotron-fluid pt-4 pb-4">
+                <div className="jumbotron j-background col-sm-10 col-md-10 col-lg-8 jumbotron-fluid pt-4 pb-4">
                     <div className="row m-3">
                         <div className="col-md-4">
                             <ProfileCard />
@@ -30,6 +30,7 @@ export default function Portfolio() {
                                 ))}
                         </div>
                     </div>
+                    <div className="j-texture"></div>
                 </div>
             </div>
     )

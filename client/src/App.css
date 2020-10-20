@@ -35,8 +35,20 @@
   margin: 0 auto;
 }
 
+.j-background {
+  position: relative;
+  background-color: unset;
+}
+
 .j-texture {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   background-image: url("./assets/texture.png");
+  z-index: -1;
+  opacity: 60%;
 }
 
 .professional-link {
