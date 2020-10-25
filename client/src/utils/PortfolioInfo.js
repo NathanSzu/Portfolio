@@ -8,7 +8,8 @@ export default {
         ],
         database: [
             "MySQL",
-            "MongoDB"
+            "MongoDB",
+            "Firebase"
         ],
         other: [
             "Node",
@@ -17,7 +18,9 @@ export default {
             "Heroku",
             "Bootstrap",
             "Git",
-            "JQuery"
+            "JQuery",
+            "Agile",
+            "Accessibility"
         ],
         projects: [
             {
