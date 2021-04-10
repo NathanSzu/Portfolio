@@ -11,7 +11,7 @@ export default function ProfileCard() {
             </div>
             <div className="row pt-2 pr-4 pl-4">
                 <div className="col-xs-6 center-wrapper">
-                    <a className="professional-link" href="https://drive.google.com/file/d/1xM-mLSowozpNPUQYFYXsG3uyMfo1xO6O/view?usp=sharing" target="_blank">Resume</a>
+                    <a className="professional-link" href="https://drive.google.com/file/d/1CvBVHkN8j189o3BSHW1dGYYs8iKVwDcV/view?usp=sharing" target="_blank">Resume</a>
                 </div>
                 <div className="col-xs-6 center-wrapper">
                     <a className="professional-link" href="https://www.linkedin.com/in/nathanszurek" target="_blank">LinkedIn</a>
