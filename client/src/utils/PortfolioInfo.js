@@ -4,12 +4,13 @@ export default {
             "CSS3",
             "HTML5",
             "JavaScript",
+            "JQuery",
             "JSON"
         ],
         database: [
             "MySQL",
             "MongoDB",
-            "Firebase"
+            "Firestore"
         ],
         other: [
             "Node",
@@ -18,15 +19,20 @@ export default {
             "Heroku",
             "Bootstrap",
             "Git",
-            "JQuery",
             "Agile",
-            "Accessibility"
+            "Accessibility",
+            "Firebase Auth"
         ],
         projects: [
             {
-                title: "Pet Supply Website",
+                title: "Atlas Pet Supply Website",
                 github: "https://github.com/NathanSzu/PetSupplyWebsite",
-                application: "https://damp-dusk-22863.herokuapp.com/"
+                application: "https://atlaspet.net"
+            },
+            {
+                title: "House of Dogz Website",
+                github: "https://github.com/NathanSzu/HouseofDogz",
+                application: "https://house-of-dogz-website.web.app/"
             },
             {
                 title: "Blog for Developers",
